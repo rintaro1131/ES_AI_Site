@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>業務AIレシピ集 | 活用カタログ</title>
+  <link rel="canonical" href="./catalog.html" />
+  <meta name="description" content="業務AIのユースケースを検索・フィルタで探す。" />
+  <meta property="og:title" content="活用カタログ" />
+  <meta property="og:image" content="assets/img/ogp.png" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">メインへスキップ</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="./index.html"><span class="logo"></span>業務AIレシピ集</a>
+      <nav aria-label="グローバル" class="nav-links">
+        <ul>
+          <li><a aria-current="page" href="./catalog.html">活用カタログ</a></li>
+          <li><a href="./templates.html">テンプレ</a></li>
+          <li><a href="./roi.html">ROI計算</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+  <main id="main" class="container">
+    <h1>活用カタログ</h1>
+    <p class="muted">タイトル・タグで検索、カテゴリ/難易度/所要時間で絞り込み。</p>
+
+    <div class="filters" role="search">
+      <label class="visually-hidden" for="q">検索</label>
+      <input id="q" data-js="q" type="search" placeholder="検索ワード (例: メール, 提案)" aria-label="検索" />
+      <select data-js="f-cat" aria-label="カテゴリ">
+        <option value="">カテゴリ</option>
+        <option>情報収集</option>
+        <option>文章作成</option>
+        <option>画像解析</option>
+        <option>商談準備</option>
+        <option>販促</option>
+      </select>
+      <select data-js="f-dif" aria-label="難易度">
+        <option value="">難易度</option>
+        <option value="easy">easy</option>
+        <option value="medium">medium</option>
+        <option value="hard">hard</option>
+      </select>
+      <select data-js="f-time" aria-label="所要時間">
+        <option value="">所要時間</option>
+        <option value="<=5">5分以内</option>
+        <option value="<=10">10分以内</option>
+        <option value=">10">10分超</option>
+      </select>
+    </div>
+
+    <div class="card-grid" data-js="results" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>最終更新: <span data-js="last-updated"></span> / <a class="link" href="./policy.html">簡易利用規約</a> / commit: <span data-js="commit-sha">-</span></p>
+      <p>© 業務AIレシピ集</p>
+    </div>
+  </footer>
+
+  <script type="module">
+    import './assets/js/app.js';
+    import { initCatalog } from './assets/js/features/search.js';
+    import { Modal } from './assets/js/ui/modal.js';
+    Modal.mount();
+    window.addEventListener('DOMContentLoaded', initCatalog);
+  </script>
+</body>
+</html>

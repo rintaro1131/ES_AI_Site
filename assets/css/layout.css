@@ -1,0 +1,33 @@
+/* layout.css - ヘッダー/ナビ/コンテナ/ヒーロー背景など */
+
+header.site-header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(140%) blur(8px);background:color-mix(in oklab, var(--bg) 70%, transparent);transition:background var(--dur-2) var(--ease), box-shadow var(--dur-2) var(--ease)}
+header.site-header.scrolled{background:color-mix(in oklab, var(--bg) 94%, transparent);box-shadow:0 2px 12px rgba(0,0,0,.2)}
+
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.nav .brand{display:flex;align-items:center;gap:10px;font-weight:700}
+.nav .brand .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2))}
+.nav ul{display:flex;gap:12px;flex-wrap:wrap}
+.nav a{padding:8px 10px;border-radius:10px}
+.nav a:focus-visible,.nav a[aria-current="page"]{outline:none;background:rgba(255,255,255,.06)}
+
+.hero{position:relative;isolation:isolate;padding:72px 0 48px;margin-bottom:32px;border-bottom:1px solid var(--line);background:
+  radial-gradient(1000px 400px at 20% 0%, color-mix(in oklab,var(--accent) 20%, transparent), transparent),
+  radial-gradient(1000px 400px at 80% 0%, color-mix(in oklab,var(--accent-2) 22%, transparent), transparent),
+  linear-gradient(180deg, rgba(255,255,255,.04), rgba(0,0,0,.08));
+}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background-image:url('../img/patterns.svg');opacity:.2;background-size:360px}
+.hero h1{font-size:var(--fs-xxl);line-height:1.2;letter-spacing:.01em;margin-bottom:12px}
+.hero p{font-size:var(--fs-lg);color:var(--muted);max-width:70ch}
+.hero .hero-media{margin-top:16px}
+.hero .hero-media img{display:block;width:100%;height:auto;border-radius:16px;box-shadow:var(--shadow-md)}
+.hero .actions{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
+
+main{padding:24px 0 56px}
+
+footer.site-footer{border-top:1px solid var(--line);padding:20px 0;color:var(--muted);font-size:var(--fs-sm)}
+
+.card-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+
+/* Light theme: make hero area plain white */
+html[data-theme="light"] .hero{background:#ffffff}
+html[data-theme="light"] .hero::after{opacity:.06}

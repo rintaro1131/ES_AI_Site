@@ -1,0 +1,23 @@
+[
+  {
+    "path": ".next",
+    "reason": "cache_dir:.next",
+    "size": 31612928,
+    "mtime": "2025-08-31T14:05:20",
+    "action": "move"
+  },
+  {
+    "path": ".DS_Store",
+    "reason": "os_editor_file:.DS_Store",
+    "size": 12288,
+    "mtime": "2025-09-15T17:29:39",
+    "action": "move"
+  },
+  {
+    "path": "img/.DS_Store",
+    "reason": "os_editor_file:.DS_Store",
+    "size": 8192,
+    "mtime": "2025-09-15T17:41:39",
+    "action": "move"
+  }
+]

@@ -1,68 +1,40 @@
-<!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>業務AIレシピ集 | 相談フォーム</title>
-  <link rel="canonical" href="./contact.html" />
-  <meta property="og:title" content="相談フォーム" />
-  <meta property="og:image" content="assets/img/ogp.png" />
-  <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="assets/css/layout.css" />
-  <link rel="stylesheet" href="assets/css/components.css" />
-</head>
-<body>
-  <a class="skip-link" href="#main">メインへスキップ</a>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="./index.html"><span class="logo"></span>業務AIレシピ集</a>
-      <nav aria-label="グローバル" class="nav-links">
-        <ul>
-          <li><a href="./catalog.html">活用カタログ</a></li>
-          <li><a href="./templates.html">テンプレ</a></li>
-          <li><a aria-current="page" href="./contact.html">相談</a></li>
-        </ul>
-      </nav>
-      
-    </div>
-  </header>
-  <main id="main" class="container">
-    <h1>相談フォーム</h1>
-    <form class="card" data-js="contact-form" novalidate>
-      <div class="field">
-        <label for="purpose">用途</label>
-        <select id="purpose" name="purpose" required>
-          <option value="">選択してください</option>
-          <option>調査/要約</option>
-          <option>文章作成</option>
-          <option>画像解析</option>
-          <option>社内展開</option>
-        </select>
-      </div>
-      <div class="field">
-        <label for="trouble">困りごと</label>
-        <textarea id="trouble" name="trouble" rows="4" required placeholder="現状と理想、制約条件など"></textarea>
-      </div>
-      <div class="field">
-        <label for="when">希望日時</label>
-        <input id="when" name="when" type="datetime-local" required />
-      </div>
-      <div class="field">
-        <label for="contact">連絡先</label>
-        <input id="contact" name="contact" type="email" required placeholder="mail@example.com" />
-      </div>
-      <div class="help" aria-live="polite"></div>
-      <div class="actions" style="margin-top:8px">
-        <button class="btn primary" type="submit">送信（ダミー）</button>
-      </div>
-    </form>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <p>最終更新: <span data-js="last-updated"></span> / <a class="link" href="./policy.html">簡易利用規約</a> / commit: <span data-js="commit-sha">-</span></p>
-      <p>© 業務AIレシピ集</p>
-    </div>
-  </footer>
-  <script type="module" src="assets/js/app.js" defer></script>
-</body>
-</html>
+<!doctype html><html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>相談</title><link rel="stylesheet" href="assets/css/base.css"></head><body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <span class="brand__logo" aria-hidden="true">AI</span>
+      <span class="brand__title">業務AIレシピ集</span>
+    </a>
+    <nav class="nav">
+      <a href="catalog.html">活用カタログ</a>
+      <a href="templates.html">テンプレ集</a>
+      <a href="roi.html">ROI計算</a>
+      <a href="cases.html">事例</a>
+      <a href="blog.html">ブログ</a>
+      <a href="faq.html">FAQ</a>
+      <a href="policy.html">規約</a>
+      <a href="contact.html">相談</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero"><div class="wrap hero__inner"><h1 class="hero__title">30分AI化相談</h1><p class="hero__lead">困りごとを教えてください。最短手順を提案します。</p></div></section>
+  <section class="section"><div class="wrap grid grid3">
+    <label>お名前<input type="text" placeholder="山田 太郎"></label>
+    <label>メール<input type="email" placeholder="you@example.com"></label>
+    <label>希望日時<input type="text" placeholder="例: 明日 午後"></label>
+    <label style="grid-column:1/-1">困りごと<textarea rows="6" style="width:100%"></textarea></label>
+    <button class="btn btn--accent" type="button" onclick="alert('送信の代わりにダイアログ表示（デモ）')">送信</button>
+  </div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot__inner">
+    <small>© 業務AIレシピ集</small>
+    <small id="updated"></small>
+  </div>
+</footer>
+<script type="module" src="assets/js/app.js"></script>
+</body></html>

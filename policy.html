@@ -1,60 +1,38 @@
-<!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>業務AIレシピ集 | セキュリティとガバナンス</title>
-  <link rel="canonical" href="./policy.html" />
-  <meta property="og:title" content="セキュリティとガバナンス" />
-  <meta property="og:image" content="assets/img/ogp.png" />
-  <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="assets/css/layout.css" />
-  <link rel="stylesheet" href="assets/css/components.css" />
-</head>
-<body>
-  <a class="skip-link" href="#main">メインへスキップ</a>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="./index.html"><span class="logo"></span>業務AIレシピ集</a>
-      <nav aria-label="グローバル" class="nav-links">
-        <ul>
-          <li><a href="./catalog.html">活用カタログ</a></li>
-          <li><a href="./faq.html">FAQ</a></li>
-          <li><a aria-current="page" href="./policy.html">ポリシー</a></li>
-        </ul>
-      </nav>
-      
-    </div>
-  </header>
-  <main id="main" class="container">
-    <h1>セキュリティとガバナンス</h1>
-    <section class="reveal">
-      <h2>機密情報</h2>
-      <p>機密区分に応じた取り扱いを徹底し、匿名化やダミー化を基本とします。クラウド送信の可否はシステム規程に従ってください。</p>
-    </section>
-    <section class="reveal">
-      <h2>個人情報</h2>
-      <p>個人を特定できる情報は、同意・目的・保管期間を明確にし、不要になれば速やかに削除します。</p>
-    </section>
-    <section class="reveal">
-      <h2>著作権</h2>
-      <p>第三者の著作物の引用は適切な範囲で出典を明記し、無断転載は行いません。</p>
-    </section>
-    <section class="reveal">
-      <h2>禁止事項</h2>
-      <p>差別・ハラスメント・虚偽の拡散・不正アクセスその他法令/社内規程に反する行為を禁止します。</p>
-    </section>
-    <section class="reveal">
-      <h2>モデル差異の注意</h2>
-      <p>モデルごとの得意/不得意を把握し、ファクト要件がある場合は出典提示を求めるなどガードレールを設定します。</p>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <p>最終更新: <span data-js="last-updated"></span> / <a class="link" href="./policy.html">簡易利用規約</a> / commit: <span data-js="commit-sha">-</span></p>
-      <p>© 業務AIレシピ集</p>
-    </div>
-  </footer>
-  <script type="module" src="assets/js/app.js" defer></script>
-</body>
-</html>
+<!doctype html><html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>利用規約・ポリシー</title><link rel="stylesheet" href="assets/css/base.css"></head><body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <span class="brand__logo" aria-hidden="true">AI</span>
+      <span class="brand__title">業務AIレシピ集</span>
+    </a>
+    <nav class="nav">
+      <a href="catalog.html">活用カタログ</a>
+      <a href="templates.html">テンプレ集</a>
+      <a href="roi.html">ROI計算</a>
+      <a href="cases.html">事例</a>
+      <a href="blog.html">ブログ</a>
+      <a href="faq.html">FAQ</a>
+      <a href="policy.html">規約</a>
+      <a href="contact.html">相談</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero"><div class="wrap hero__inner"><h1 class="hero__title">セキュリティとガバナンス</h1><p class="hero__lead">安心して使うための約束。</p></div></section>
+  <section class="section"><div class="wrap grid">
+    <article class="card"><h2>機密の扱い</h2><p>個人情報・契約は匿名化。公開前に検収。</p></article>
+    <article class="card"><h2>著作権</h2><p>公開素材は出典を確認。自社文言は社内承認。</p></article>
+    <article class="card"><h2>モデル差異</h2><p>再現性を保つためテンプレにモデル名/日付を記載。</p></article>
+  </div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot__inner">
+    <small>© 業務AIレシピ集</small>
+    <small id="updated"></small>
+  </div>
+</footer>
+<script type="module" src="assets/js/app.js"></script>
+</body></html>

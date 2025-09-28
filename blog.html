@@ -1,48 +1,38 @@
-<!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>業務AIレシピ集 | ブログ</title>
-  <link rel="canonical" href="./blog.html" />
-  <meta property="og:title" content="ブログ" />
-  <meta property="og:image" content="assets/img/ogp.png" />
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org","@type":"Blog",
-    "name":"業務AIレシピ集 ブログ"
-  }
-  </script>
-  <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="assets/css/layout.css" />
-  <link rel="stylesheet" href="assets/css/components.css" />
-  <link rel="stylesheet" href="assets/css/pages.css" />
-</head>
-<body>
-  <a class="skip-link" href="#main">メインへスキップ</a>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="./index.html"><span class="logo"></span>業務AIレシピ集</a>
-      <nav aria-label="グローバル" class="nav-links">
-        <ul>
-          <li><a href="./catalog.html">活用カタログ</a></li>
-          <li><a href="./templates.html">テンプレ</a></li>
-          <li><a aria-current="page" href="./blog.html">ブログ</a></li>
-        </ul>
-      </nav>
-      
-    </div>
-  </header>
-  <main id="main" class="container">
-    <h1>ブログ</h1>
-    <div class="card-grid" data-js="blog-list"></div>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <p>最終更新: <span data-js="last-updated"></span> / <a class="link" href="./policy.html">簡易利用規約</a> / commit: <span data-js="commit-sha">-</span></p>
-      <p>© 業務AIレシピ集</p>
-    </div>
-  </footer>
-  <script type="module" src="assets/js/app.js" defer></script>
-</body>
-</html>
+<!doctype html><html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ブログ</title><link rel="stylesheet" href="assets/css/base.css"></head><body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <span class="brand__logo" aria-hidden="true">AI</span>
+      <span class="brand__title">業務AIレシピ集</span>
+    </a>
+    <nav class="nav">
+      <a href="catalog.html">活用カタログ</a>
+      <a href="templates.html">テンプレ集</a>
+      <a href="roi.html">ROI計算</a>
+      <a href="cases.html">事例</a>
+      <a href="blog.html">ブログ</a>
+      <a href="faq.html">FAQ</a>
+      <a href="policy.html">規約</a>
+      <a href="contact.html">相談</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero"><div class="wrap hero__inner"><h1 class="hero__title">ブログ</h1><p class="hero__lead">更新ログや小ネタを短く。</p></div></section>
+  <section class="section"><div class="wrap grid grid3">
+    <article class="card"><h2>5分でできるAI時短3選</h2><p>箇条書きを渡す→下書き、写真→要点、数字→ざっくり試算。</p></article>
+    <article class="card"><h2>テンプレを資産化する</h2><p>よく使う出力は社内共有で再現性UP。</p></article>
+    <article class="card"><h2>安全運用のコツ</h2><p>匿名化・検収・最新版テンプレの3点セット。</p></article>
+  </div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot__inner">
+    <small>© 業務AIレシピ集</small>
+    <small id="updated"></small>
+  </div>
+</footer>
+<script type="module" src="assets/js/app.js"></script>
+</body></html>

@@ -1,47 +1,41 @@
-<!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>業務AIレシピ集 | FAQ</title>
-  <link rel="canonical" href="./faq.html" />
-  <meta property="og:title" content="FAQ" />
-  <meta property="og:image" content="assets/img/ogp.png" />
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org","@type":"FAQPage",
-    "mainEntity": []
-  }
-  </script>
-  <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="assets/css/layout.css" />
-  <link rel="stylesheet" href="assets/css/components.css" />
-</head>
-<body>
-  <a class="skip-link" href="#main">メインへスキップ</a>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="./index.html"><span class="logo"></span>業務AIレシピ集</a>
-      <nav aria-label="グローバル" class="nav-links">
-        <ul>
-          <li><a href="./catalog.html">活用カタログ</a></li>
-          <li><a href="./templates.html">テンプレ</a></li>
-          <li><a aria-current="page" href="./faq.html">FAQ</a></li>
-        </ul>
-      </nav>
-      
-    </div>
-  </header>
-  <main id="main" class="container">
-    <h1>FAQ</h1>
-    <div class="accordion" data-js="faq-accordion" aria-live="polite"></div>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <p>最終更新: <span data-js="last-updated"></span> / <a class="link" href="./policy.html">簡易利用規約</a> / commit: <span data-js="commit-sha">-</span></p>
-      <p>© 業務AIレシピ集</p>
-    </div>
-  </footer>
-  <script type="module" src="assets/js/app.js" defer></script>
-</body>
-</html>
+<!doctype html><html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FAQ</title><link rel="stylesheet" href="assets/css/base.css"></head><body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <span class="brand__logo" aria-hidden="true">AI</span>
+      <span class="brand__title">業務AIレシピ集</span>
+    </a>
+    <nav class="nav">
+      <a href="catalog.html">活用カタログ</a>
+      <a href="templates.html">テンプレ集</a>
+      <a href="roi.html">ROI計算</a>
+      <a href="cases.html">事例</a>
+      <a href="blog.html">ブログ</a>
+      <a href="faq.html">FAQ</a>
+      <a href="policy.html">規約</a>
+      <a href="contact.html">相談</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero"><div class="wrap hero__inner"><h1 class="hero__title">FAQ</h1><p class="hero__lead">よくある質問。</p></div></section>
+  <section class="section"><div class="wrap">
+    <button class="btn" data-acc aria-expanded="false">機密情報は入れてよい？</button>
+    <div class="card" hidden><p>匿名化してください。個人情報・契約情報は不可。</p></div>
+    <button class="btn" data-acc aria-expanded="false">品質は担保できる？</button>
+    <div class="card" hidden><p>公開前の検収をルール化。テンプレを最新版に。</p></div>
+    <button class="btn" data-acc aria-expanded="false">コストは？</button>
+    <div class="card" hidden><p>ROIページでざっくり試算できます。</p></div>
+  </div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot__inner">
+    <small>© 業務AIレシピ集</small>
+    <small id="updated"></small>
+  </div>
+</footer>
+<script type="module" src="assets/js/app.js"></script>
+</body></html>

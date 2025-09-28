@@ -23,15 +23,4 @@ document.querySelectorAll('[data-copy]').forEach(btn=>{
   });
 });
 
-// ROI 計算
-function calcROI(scope){
-  const get=(name)=>Number(scope.querySelector(`[name="${name}"]`)?.value||0);
-  const wage=get('wage'), before=get('before'), after=get('after'), perWeek=get('perWeek'), perMonth=get('perMonth');
-  const saveMin=Math.max(0,before-after)*perWeek*perMonth;
-  const monthly=Math.round((saveMin/60)*wage), yearly=monthly*12;
-  scope.querySelector('[data-out]').textContent=`月の削減額：${monthly.toLocaleString()} 円 / 年間：${yearly.toLocaleString()} 円`;
-}
-document.querySelectorAll('[data-roi]').forEach(form=>{
-  form.addEventListener('input',()=>calcROI(form)); calcROI(form);
-});
-
+// ROI 機能は削除（フォームがないため）
